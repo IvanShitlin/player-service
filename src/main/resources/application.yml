@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:playerDB
+    username: username
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  application:
+    name: players-service

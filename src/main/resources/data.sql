@@ -1,0 +1,27 @@
+INSERT INTO player (
+                    player_id,
+                    birth_year,
+                    birth_month,
+                    birth_day,
+                    birth_country,
+                    birth_state,
+                    birth_city,
+                    death_year,
+                    death_month,
+                    death_day,
+                    death_country,
+                    death_state,
+                    death_city,
+                    name_first,
+                    name_last,
+                    name_given,
+                    weight,
+                    height,
+                    bats,
+                    throws,
+                    debut,
+                    final_game,
+                    retro_id,
+                    bbref_id
+                    )
+SELECT * FROM CSVREAD('classpath:player.csv');
