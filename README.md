@@ -4,12 +4,11 @@ Player Service provides access to player data stored in a CSV file.
 ### API
 The API provides the following endpoints:
 
-- GET /api/players: Retrieves a list of all players.
-- GET /api/players/{playerID}: Retrieves a single player by ID.
+- GET /api/players: Retrieves a list of players.
+- GET /api/players/{playerID}: Retrieves a single player.
 
 ### Setup
 - Clone the repository to your local machine.
-- Ensure you have Java 17 and Gradle installed.
 - Build the Docker image using the following command:
 ``` shell
 docker build -t player-service .
